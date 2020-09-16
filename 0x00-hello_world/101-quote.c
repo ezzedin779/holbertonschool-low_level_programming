@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- *main - void
+ * main - void
  * Return: 1
- *unistd.h - printing in our way
+ * unistd - printing in our way
  */
 int main(void)
 {
