@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
-*how to use to
-*print a message with puts
-*for the first time
+/**
+*how to use puts
+* main void
+* return 0
 */
 int main(void)
 {
