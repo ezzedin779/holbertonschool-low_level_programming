@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main(void)
+int main()
 {
 puts("\"Programming is like building a multilingual puzzle");
-return (0); /*first c program */
+return (0); /*how to use put */
 }
