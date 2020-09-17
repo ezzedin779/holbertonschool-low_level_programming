@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* Main - void
-*
+* main - void
 * Return: 0
 */
 int main(void)
