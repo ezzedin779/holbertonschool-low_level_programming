@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - void
-* putchar - print all combinations of double-digit numbers
+* putchar - print all combinations of diff double-digit numbers
 * Return: 0
 */
 int main(void)
