@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - void
-* putchar - print the numbers
+* printf - print the numbers
 * Return: 0
 */
 int main(void)
