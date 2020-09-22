@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long i, x = 1, y = 2, z;
+	unsigned long x = 1, y = 2, z;
 	float sum = 0;
 
 	do
@@ -16,7 +16,7 @@ int main(void)
 		y = z;
 		if ((z % 2) == 0)
 		sum += z;
-	} while (z > 4000000);
+	} while (z < 4000000);
 	printf("%.0f\n", sum);
 	return (0);
 }
