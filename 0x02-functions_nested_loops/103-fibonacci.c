@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * main - fib 4000000
  *
  * Return: Always 0.
  */
@@ -14,7 +14,7 @@ int main(void)
 		z = x + y;
 		x = y;
 		y = z;
-		if (z % 2 == 0)
+		if ((z % 2) == 0)
 		sum += z;
 	}
 	printf("%.0f\n", sum);
