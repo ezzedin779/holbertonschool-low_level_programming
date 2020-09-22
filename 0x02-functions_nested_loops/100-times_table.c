@@ -13,15 +13,15 @@ if ((n > 0) && (n < 15))
 {
 	for (i = 0; i <= n; i++)
 	{
-		_putchar('0');
-		_putchar(',');
 		for (j = 1; j <= n; j++)
 		{
-			_putchar (' ');
 			if (i * j < 10)
 			{
+				if (j != 0)
+				{
 				_putchar (' ');
 				_putchar(' ');
+				}
 				_putchar(i * j  + '0');
 			}
 			else if (i * j >= 100)
