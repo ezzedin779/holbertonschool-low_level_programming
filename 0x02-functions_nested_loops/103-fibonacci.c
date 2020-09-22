@@ -12,10 +12,10 @@ int main(void)
 	while (z < 4000000)
 	{
 		z = x + y;
+		if ((z % 2) == 0)
+			sum += z;
 		x = y;
 		y = z;
-		if ((z % 2) == 0)
-		sum += z;
 	}
 	printf("%.0f\n", sum);
 	return (0);
