@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	long long i,x = 1, y = 2, z;
+	unsigned int i, x = 1, y = 2, z;
 
 	for (i = 1; i <= 4000000; ++i)
 	{
 		if (i % 2 == 0)
 		{
 		if (i != 4000000)
-		printf("%lld, ", x);
+		printf("%d, ", x);
 		else
-		printf("%lld\n", x);
+		printf("%d\n", x);
 		z = x + y;
 		x = y;
 		y = z;
