@@ -1,5 +1,5 @@
-#ifndef holberton
-#define holberton
+#ifndef holberton_H
+#define holberton_H
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
