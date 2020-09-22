@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long i, x = 1, y = 2, z;
-	float sum;
+	float sum = 0;
 
 	for (i = 1; i <= 4000000; ++i)
 	{
@@ -15,7 +15,7 @@ int main(void)
 		x = y;
 		y = z;
 		if (z % 2 == 0)
-		sum = sum + z;
+		sum += z;
 	}
 	printf("%.0f\n", sum);
 	return (0);
