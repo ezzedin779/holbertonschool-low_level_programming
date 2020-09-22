@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned int i, x = 1, y = 2, z;
+	unsigned int i, x = 1, y = 2, z, sum;
 
 	for (i = 1; i <= 4000000; ++i)
 	{
