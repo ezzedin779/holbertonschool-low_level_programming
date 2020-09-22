@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned int i, x = 1, y = 2, z, sum;
+	unsigned long i, x = 1, y = 2, z, sum;
 
 	for (i = 1; i <= 4000000; ++i)
 	{
@@ -16,6 +16,6 @@ int main(void)
 		if (z % 2 == 0)
 		sum = sum + z;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
