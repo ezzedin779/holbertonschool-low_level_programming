@@ -16,6 +16,6 @@ int main(void)
 		if (z % 2 == 0)
 		sum = sum + z;
 	}
-	printf("%d", sum)
+	printf("%d\n", sum)
 	return (0);
 }
