@@ -15,7 +15,7 @@ int main(void)
 		while (s >= 10)
 			s /= 10;
 		if ((s == 1) || (s == 2))
-			printf ("%ld, ", z);
+			printf("%ld, ", z);
 		x = y;
 		y = z;
 	}
