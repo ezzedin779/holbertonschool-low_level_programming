@@ -18,7 +18,7 @@ int main(void)
 		if ((s == 1) || (s == 2))
 		{
 			printf("%ld", z);
-			if (z < 98)
+			if (z < 97)
 				printf(", ");
 			else
 				printf("\n");
