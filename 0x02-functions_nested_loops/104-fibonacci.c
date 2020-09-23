@@ -20,7 +20,7 @@ int main(void)
 			if (z < 98)
 				printf(", ");
 			else 
-				printf ("\n");
+				printf("\n");
 		}
 		x = y;
 		y = z;
