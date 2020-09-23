@@ -6,8 +6,9 @@
  */
 int main(void)
 {
-	unsigned long x = 0, y = 1, z = 0, s = 0;
+	unsigned long x = 1, y = 2, z = 0, s = 0;
 
+	printf("%ld, %ld, ", x, y);
 	while (z <= 98)
 	{
 		z = x + y;
