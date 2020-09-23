@@ -15,7 +15,13 @@ int main(void)
 		while (s >= 10)
 			s /= 10;
 		if ((s == 1) || (s == 2))
-			printf("%ld, ", z);
+		{
+			printf("%ld", z);
+			if (z < 98)
+				printf(", ");
+			else 
+				printf ("\n");
+		}
 		x = y;
 		y = z;
 	}
