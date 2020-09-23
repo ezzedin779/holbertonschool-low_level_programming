@@ -9,7 +9,7 @@ int main(void)
 	unsigned long x = 1, y = 2, z = 0, s = 0;
 	int i = 0;
 
-	printf("%ld, %ld, ", x, y);
+	printf("%lu, %lu, ", x, y);
 	while (i <= 96)
 	{
 		z = x + y;
@@ -18,9 +18,9 @@ int main(void)
 			s /= 10;
 		if ((s == 1) || (s == 2))
 		{
-			printf("%ld", z);
+			printf("%lu", z);
 			i++;
-			if (i < 95)
+			if (i <= 95)
 				printf(", ");
 			else
 				printf("\n");
