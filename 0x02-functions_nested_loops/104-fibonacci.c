@@ -20,7 +20,7 @@ int main(void)
 		{
 			printf("%ld", z);
 			i++;
-			if (i < 97)
+			if (i < 95)
 				printf(", ");
 			else
 				printf("\n");
