@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long x = 1, y = 2, z = 0;
+	unsigned long x = 0, y = 1, z = 0;
 	float sum = 0;
 
 	while (z < 4000000)
