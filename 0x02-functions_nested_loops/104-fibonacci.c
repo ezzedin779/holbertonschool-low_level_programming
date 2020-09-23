@@ -19,7 +19,7 @@ int main(void)
 			printf("%ld", z);
 			if (z < 98)
 				printf(", ");
-			else 
+			else
 				printf("\n");
 		}
 		x = y;
