@@ -1,9 +1,11 @@
 #include "holberton.h"
-/* main - char
-*@c: checking if he's uppercase
+
+/**
+*_isupper - Majus or not
+*@c: the object to check
 *Return: integer
 */
-int main (char c)
+int _isupper(int c)
 {
 	if ((c >= 'A') && (c <= 'Z'))
 	return (1);
