@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*_puts - print a string
+*_puts2 - print an even string
 *@str: string to print
 */
 void puts2(char *str)
