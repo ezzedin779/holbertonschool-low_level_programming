@@ -1,17 +1,16 @@
 #include "holberton.h"
 /**
-*puts2 - print a even characters
+*_puts - print a string
 *@str: string to print
 */
 void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; *str != '\0'; i++)
+	for (i = 0; str[i]; i++)
 	{
-		_putchar (*str);
-		str++;
-		str++;
+		_putchar (str[i]);
+		i++;
 	}
 	_putchar ('\n');
 }
