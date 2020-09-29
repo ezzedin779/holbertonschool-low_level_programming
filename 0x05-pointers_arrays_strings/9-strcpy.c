@@ -2,6 +2,7 @@
 *_strcpy - copy src in dest
 *@src: copied
 *@dest: destination
+*Return: string
 */
 char *_strcpy(char *dest, char *src)
 {
