@@ -1,5 +1,6 @@
 /**
 *_atoi - gets the number out
+*@s: the string !
 *Return: integer
 */
 int _atoi(char *s)
