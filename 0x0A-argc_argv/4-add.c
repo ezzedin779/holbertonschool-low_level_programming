@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int x = 0, var = 0, i;
+
 	for (i = 1; i < argc; i++)
 	{
 		if (atoi(argv[i]) != 0)
@@ -22,6 +23,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf ("%d\n", x);
+	printf("%d\n", x);
 	return (0);
 }
