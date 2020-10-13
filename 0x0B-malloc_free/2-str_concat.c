@@ -20,7 +20,7 @@ int length(char *str)
 */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+	int i;
 	char *ch;
 
 	if (s1 == NULL || s2 == NULL)
@@ -30,8 +30,8 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 		ch[i] = s1[i];
-	for (j = 0; i != length(s1) + length(s2) && s2[j] != '\0'; i++, j++)
-		ch[i] = s2[j];
+	for (i = 0; i != length(s2); i++)
+		ch[i + length(s1)] = s2[j];
 	ch[i] = '\0';
 	return (ch);
 }
