@@ -23,16 +23,18 @@ char *str_concat(char *s1, char *s2)
 	int i, j = 0;
 	char *ch;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	ch = malloc(sizeof(char) * (length(s1) + length(s2) + 1));
-	if (ch == NULL || s1 == NULL || s2 == NULL)
+	if (ch == NULL)
 		return (NULL);
 	for (i = 0; i < length(s1); i++)
 		ch[i] = s1[i];
-	for (; i < (length(s1) + length(s2)); i++)
+	for (; i <= (length(s1) + length(s2)); i++)
 	{
 		ch[i] = s2[j];
 		j++;
 	}
-	ch[i] = '\0';
+	ch[i + 1] = '\0';
 	return (ch);
 }
