@@ -8,7 +8,10 @@
 */
 void char_p(va_list character)
 {
-	printf("%c", va_arg(character, int));
+	char c;
+
+	c = va_arg(character, int);
+	printf("%c", c);
 }
 
 /**
@@ -17,7 +20,10 @@ void char_p(va_list character)
 */
 void int_p(va_list integer)
 {
-	printf("%d", va_arg(integer, int));
+	int x;
+
+	x = va_arg(integer, int);
+	printf("%d", x);
 }
 
 /**
@@ -26,7 +32,10 @@ void int_p(va_list integer)
 */
 void float_p(va_list f)
 {
-	printf("%f", va_arg(f, double));
+	double x;
+
+	x = va_arg(f, double);
+	printf("%f", x);
 }
 
 /**
@@ -40,7 +49,8 @@ void string_p(va_list string)
 	str = va_arg(string, char *);
 	if (str == NULL)
 		printf("(nil)");
-	printf("%s", str);
+	else
+		printf("%s", str);
 }
 /**
 *print_all - printing depending on a format
@@ -49,7 +59,7 @@ void string_p(va_list string)
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int i, j;
+	unsigned int i = 0, j = 0;
 	char *seperator = "";
 	choose_t a[] = {
 		{"c", char_p},
@@ -60,7 +70,6 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(list, format);
-	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
@@ -77,6 +86,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
 	va_end(list);
+	printf("\n");
 }
