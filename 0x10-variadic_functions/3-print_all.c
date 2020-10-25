@@ -49,8 +49,7 @@ void string_p(va_list string)
 	str = va_arg(string, char *);
 	if (str == NULL)
 		printf("(nil)");
-	else
-		printf("%s", str);
+	printf("%s", str);
 }
 /**
 *print_all - printing depending on a format
