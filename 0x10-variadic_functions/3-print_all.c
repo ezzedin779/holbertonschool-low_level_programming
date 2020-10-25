@@ -58,7 +58,7 @@ void string_p(va_list string)
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int i = 0, j = 0;
+	unsigned int i, j;
 	char *seperator = "";
 	choose_t a[] = {
 		{"c", char_p},
@@ -69,6 +69,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(list, format);
+	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
