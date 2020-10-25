@@ -8,10 +8,7 @@
 */
 void char_p(va_list character)
 {
-	char c;
-
-	c = va_arg(character, int);
-	printf("%c", c);
+	printf("%c", va_arg(character, int));
 }
 
 /**
@@ -20,10 +17,7 @@ void char_p(va_list character)
 */
 void int_p(va_list integer)
 {
-	int x;
-
-	x = va_arg(integer, int);
-	printf("%d", x);
+	printf("%d", va_arg(integer, int));
 }
 
 /**
@@ -32,10 +26,7 @@ void int_p(va_list integer)
 */
 void float_p(va_list f)
 {
-	double x;
-
-	x = va_arg(f, double);
-	printf("%f", x);
+	printf("%f", va_arg(f, double));
 }
 
 /**
