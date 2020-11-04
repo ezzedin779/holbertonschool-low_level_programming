@@ -1,13 +1,15 @@
 #include "lists.h"
-
+/**
+*find_listint_loop - find the loop
+*@head: the head of the list
+*Return: the adress of the begining of the loop
+*/
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *tmp, *p;
 
 	tmp = head->next;
 	p = tmp->next;
-	if (head == NULL || head->next == NULL || p->next == NULL)
-		return (NULL);
 	while (tmp != NULL && p != NULL && p->next != NULL)
 	{
 		if (tmp == p)
@@ -16,6 +18,8 @@ listint_t *find_listint_loop(listint_t *head)
 			break;
 		}
 	}
+	if (tmp == NULL || p == NULL || p->next == NULL)
+		return (NULL);
 	while (tmp != p)
 	{
 		tmp = tmp->next;
