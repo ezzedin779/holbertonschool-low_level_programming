@@ -1,24 +1,4 @@
 #include "holberton.h"
-
-int checker(const char *s);
-
-/**
-*checker - checks if there's another char
-*@s: string to check
-*Return: 1 upon sucess
-*/
-int checker(const char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] != '0' && s[i] != '1')
-			return (0);
-	}
-	return (1);
-}
-
 /**
 *binary_to_uint - convert binary to unsigned int
 *@b: string of the binary number
@@ -27,21 +7,20 @@ int checker(const char *s)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0, mul = 1;
-	int i = 0, rem, n;
+	int i = 0;
 
-	if (b == NULL)
+	if (*b == '\0')
 		return (0);
-	n = checker(b);
-	if (n == 0)
-		return (0);
-	n = atoi(b);
-	while (n != 0)
+	for (i = 0; b[i] != '\0'; i++)
+	;
+	i -= 1;
+	while (i >= 0)
 	{
-		rem = n % 10;
-		n /= 10;
-		dec += rem * mul;
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		dec = dec + ((b[i] - '0') * mul);
 		mul *= 2;
-		i++;
+		i--;
 	}
 	return (dec);
 }
