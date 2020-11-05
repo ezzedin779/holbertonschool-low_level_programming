@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int dec = 0, mul = 1;
 	int i = 0, rem, n;
 
-	if (*b == NULL)
+	if (b == NULL)
 		return (0);
 	n = checker(b);
 	if (n == 0)
