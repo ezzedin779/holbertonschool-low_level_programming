@@ -20,6 +20,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 	for (i = 0; i < size; i++)
-		(hash->array)[i] = NULL;
+		hash->array[i] = NULL;
 	return (hash);
 }
